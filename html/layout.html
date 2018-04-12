@@ -110,6 +110,102 @@
 			  <div class="col-6" style = "border:1px solid #00B83F;">.col-6</div>
 			  <div class="col-6" style = "border:1px solid #00B83F;">.col-6</div>
 			</div>
+			<!-- vertical alignment -->
+			<div class = "row align-items-start">
+				<div class = "col">One of three columns</div>
+				<div class = "col">One of three columns</div>
+				<div class = "col">One of three columns</div>
+			</div>
+			<div class = "row align-items-center">
+				<div class = "col">One of three columns</div>
+				<div class = "col">One of three columns</div>
+				<div class = "col">One of three columns</div>
+			</div><div class = "row align-items-end">
+				<div class = "col">One of three columns</div>
+				<div class = "col">One of three columns</div>
+				<div class = "col">One of three columns</div>
+			</div>
+			<div class="row">
+		    <div class="col align-self-start">
+		      One of three columns
+		    </div>
+		    <div class="col align-self-center">
+		      One of three columns
+		    </div>
+		    <div class="col align-self-end">
+		      One of three columns
+		    </div>
+		  </div>
+		  <div class="row justify-content-start">
+		    <div class="col-4">
+		      One of two columns
+		    </div>
+		    <div class="col-4">
+		      One of two columns
+		    </div>
+		  </div>
+		  <div class="row justify-content-center">
+		    <div class="col-4">
+		      One of two columns
+		    </div>
+		    <div class="col-4">
+		      One of two columns
+		    </div>
+		  </div>
+		  <div class="row justify-content-end">
+		    <div class="col-4">
+		      One of two columns
+		    </div>
+		    <div class="col-4">
+		      One of two columns
+		    </div>
+		  </div>
+		  <div class="row justify-content-around">
+		    <div class="col-4">
+		      One of two columns
+		    </div>
+		    <div class="col-4">
+		      One of two columns
+		    </div>
+		  </div>
+		  <div class="row justify-content-between">
+		    <div class="col-4">
+		      One of two columns
+		    </div>
+		    <div class="col-4">
+		      One of two columns
+		    </div>
+		  </div>
+		  <!-- column nesting -->
+			<div class="row">
+			  <div class="col-9">.col-9</div>
+			  <div class="col-4">.col-4<br>Since 9 + 4 = 13 &gt; 12, this 4-column-wide div gets wrapped onto a new line as one contiguous unit.</div>
+			  <div class="col-6">.col-6<br>Subsequent columns continue along the new line.</div>
+			</div>	
+			<!-- order -->
+			<div class="row">
+			    <div class="col">
+			      First, but unordered
+			    </div>
+			    <div class="col order-12">
+			      Second, but last
+			    </div>
+			    <div class="col order-1">
+			      Third, but first
+			    </div>
+  			</div>
+  			<!-- offset -->
+  			<div class="row">
+			  <div class="col-4" style = "border:1px solid #0056B3">.col-4</div>
+			  <div class="col-4 offset-4" style = "border:1px solid #0056B3">.col-4 .offset-4</div>
+			</div>
+			<div class="row">
+			  <div class="col-md-3 offset-md-3" style = "border:1px solid #0056B3">.col-md-3 .offset-md-3</div>
+			  <div class="col-md-3 offset-md-3" style = "border:1px solid #0056B3">.col-md-3 .offset-md-3</div>
+			</div>
+			<div class="row">
+			  <div class="col-md-6 offset-md-3" style = "border:1px solid #0056B3">.col-md-6 .offset-md-3</div>
+			</div>
 		</div>
 	</body>
 </html>
